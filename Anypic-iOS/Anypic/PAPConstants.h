@@ -3,7 +3,6 @@
 //  Anypic
 //
 //  Created by Mattieu Gamache-Asselin on 5/25/12.
-//  Copyright (c) 2012 Parse. All rights reserved.
 //
 
 typedef enum {
