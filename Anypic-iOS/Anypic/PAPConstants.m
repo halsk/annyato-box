@@ -28,6 +28,7 @@ NSString *const PAPTabBarControllerDidFinishImageFileUploadNotification         
 NSString *const PAPPhotoDetailsViewControllerUserDeletedPhotoNotification       = @"com.parse.Anypic.photoDetailsViewController.userDeletedPhoto";
 NSString *const PAPPhotoDetailsViewControllerUserLikedUnlikedPhotoNotification  = @"com.parse.Anypic.photoDetailsViewController.userLikedUnlikedPhotoInDetailsViewNotification";
 NSString *const PAPPhotoDetailsViewControllerUserCommentedOnPhotoNotification   = @"com.parse.Anypic.photoDetailsViewController.userCommentedOnPhotoInDetailsViewNotification";
+NSString *const PAPCategoryViewControllerCategoryDidLoadNotification = @"com.parse.Anypic.categoryViewController.CategoryDidLoadNotification";
 
 
 #pragma mark - User Info Keys
@@ -75,6 +76,14 @@ NSString *const kPAPPhotoClassKey = @"Photo";
 NSString *const kPAPPhotoPictureKey         = @"image";
 NSString *const kPAPPhotoThumbnailKey       = @"thumbnail";
 NSString *const kPAPPhotoUserKey            = @"user";
+
+#pragma mark - Category Class
+// Class key
+NSString *const kPAPCategoryClassKey = @"Category";
+
+// Field keys
+NSString *const kPAPCategoryPictureKey         = @"image";
+NSString *const kPAPCategoryNameKey            = @"categoryname";
 
 
 #pragma mark - Cached Photo Attributes

@@ -30,7 +30,7 @@ extern NSString *const PAPTabBarControllerDidFinishImageFileUploadNotification;
 extern NSString *const PAPPhotoDetailsViewControllerUserDeletedPhotoNotification;
 extern NSString *const PAPPhotoDetailsViewControllerUserLikedUnlikedPhotoNotification;
 extern NSString *const PAPPhotoDetailsViewControllerUserCommentedOnPhotoNotification;
-
+extern NSString *const PAPCategoryViewControllerCategoryDidLoadNotification;
 
 #pragma mark - User Info Keys
 extern NSString *const PAPPhotoDetailsViewControllerUserLikedUnlikedPhotoNotificationUserInfoLikedKey;
@@ -81,6 +81,14 @@ extern NSString *const kPAPPhotoClassKey;
 extern NSString *const kPAPPhotoPictureKey;
 extern NSString *const kPAPPhotoThumbnailKey;
 extern NSString *const kPAPPhotoUserKey;
+
+#pragma mark - PFObject Category Class
+// Class key
+extern NSString *const kPAPCategoryClassKey;
+
+// Field keys
+extern NSString *const kPAPCategoryPictureKey;
+extern NSString *const kPAPCategoryNameKey;
 
 
 #pragma mark - Cached Photo Attributes

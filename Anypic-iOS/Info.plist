@@ -28,7 +28,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.parse.Anypic</string>
+	<string>jp.hackcamp.Toolshare</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -46,7 +46,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fbFACEBOOK_APP_ID</string>
+				<string>fb684770784971346</string>
 			</array>
 		</dict>
 	</array>

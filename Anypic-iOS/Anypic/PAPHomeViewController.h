@@ -6,8 +6,9 @@
 //
 
 #import "PAPPhotoTimelineViewController.h"
+#import "PAPCategeoryViewController.h"
 
-@interface PAPHomeViewController : PAPPhotoTimelineViewController
+@interface PAPHomeViewController : PAPCategeoryViewController
 
 @property (nonatomic, assign, getter = isFirstLaunch) BOOL firstLaunch;
 

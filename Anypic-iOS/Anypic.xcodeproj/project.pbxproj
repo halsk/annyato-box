@@ -16,6 +16,8 @@
 		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
 		09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
+		2BCC00881A3C51060053C208 /* PAPCategeoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */; };
+		2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */; };
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
 		74636BF31578281E00B44132 /* PAPFindFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74636BF21578281E00B44132 /* PAPFindFriendsCell.m */; };
 		747FC485156FFF74003349E1 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 747FC484156FFF74003349E1 /* PAPConstants.m */; };
@@ -188,6 +190,10 @@
 		09ABC07313A1D52D009C3FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2BCC00861A3C51060053C208 /* PAPCategeoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategeoryViewController.h; path = Anypic/PAPCategeoryViewController.h; sourceTree = SOURCE_ROOT; };
+		2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPCategeoryViewController.m; path = Anypic/PAPCategeoryViewController.m; sourceTree = SOURCE_ROOT; };
+		2BCC00891A3C62280053C208 /* PAPCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategoryCell.h; path = Anypic/PAPCategoryCell.h; sourceTree = SOURCE_ROOT; };
+		2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPCategoryCell.m; path = Anypic/PAPCategoryCell.m; sourceTree = SOURCE_ROOT; };
 		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		74636BF11578281E00B44132 /* PAPFindFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = PAPFindFriendsCell.h; path = AnyPic/PAPFindFriendsCell.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		74636BF21578281E00B44132 /* PAPFindFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = PAPFindFriendsCell.m; path = AnyPic/PAPFindFriendsCell.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -603,6 +609,8 @@
 				C4F102B0156C57820061BC3E /* PAPLoadMoreCell.m */,
 				C4F102B1156C57820061BC3E /* PAPPhotoCell.h */,
 				C4F102B2156C57820061BC3E /* PAPPhotoCell.m */,
+				2BCC00891A3C62280053C208 /* PAPCategoryCell.h */,
+				2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */,
 			);
 			name = UITableViewCells;
 			sourceTree = "<group>";
@@ -721,6 +729,8 @@
 				C4F102C8156C57ED0061BC3E /* PAPHomeViewController.m */,
 				C4F102CE156C57FD0061BC3E /* PAPAccountViewController.h */,
 				C4F102CF156C57FD0061BC3E /* PAPAccountViewController.m */,
+				2BCC00861A3C51060053C208 /* PAPCategeoryViewController.h */,
+				2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -832,6 +842,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					09ABC06C13A1D52D009C3FCF = {
+						DevelopmentTeam = 6634UJ78TD;
+					};
+				};
 			};
 			buildConfigurationList = 09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "Anypic" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -997,6 +1012,7 @@
 				C4F102B4156C57820061BC3E /* PAPBaseTextCell.m in Sources */,
 				C4F102B5156C57820061BC3E /* PAPLoadMoreCell.m in Sources */,
 				C4F102B6156C57820061BC3E /* PAPPhotoCell.m in Sources */,
+				2BCC00881A3C51060053C208 /* PAPCategeoryViewController.m in Sources */,
 				C4F102B9156C57B90061BC3E /* PAPSettingsButtonItem.m in Sources */,
 				C4F102BC156C57CD0061BC3E /* PAPTabBarController.m in Sources */,
 				C4F102C2156C57DA0061BC3E /* PAPLogInViewController.m in Sources */,
@@ -1009,6 +1025,7 @@
 				C4F102D8156C580C0061BC3E /* PAPFindFriendsViewController.m in Sources */,
 				C4F102D9156C580C0061BC3E /* PAPSettingsActionSheetDelegate.m in Sources */,
 				C4F102DC156C58170061BC3E /* PAPEditPhotoViewController.m in Sources */,
+				2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */,
 				C4F102EF156C58E00061BC3E /* main.m in Sources */,
 				C4A0B505156C5B9F00E48554 /* TTTTimeIntervalFormatter.m in Sources */,
 				747FC485156FFF74003349E1 /* PAPConstants.m in Sources */,
@@ -1070,6 +1087,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1091,6 +1110,7 @@
 					"\"$(SRCROOT)/External/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = Anypic;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1100,6 +1120,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1116,6 +1138,7 @@
 					"\"$(SRCROOT)/External/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = Anypic;
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1141,7 +1164,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1159,6 +1183,7 @@
 					"\"$(SRCROOT)/External/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = Anypic;
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1185,7 +1210,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1203,6 +1229,7 @@
 					"\"$(SRCROOT)/External/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = Anypic;
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
