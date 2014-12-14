@@ -16,8 +16,15 @@
 		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
 		09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
+		2B84D3BC1A3D1A810082A116 /* PAPUserProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3BB1A3D1A810082A116 /* PAPUserProfileView.xib */; };
+		2B84D3C51A3D29F40082A116 /* ProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3C41A3D29F40082A116 /* ProfileEditViewController.m */; };
+		2B84D3CE1A3D2AA60082A116 /* PAPProfileEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3CD1A3D2AA60082A116 /* PAPProfileEditView.m */; };
+		2B84D3D01A3D2AC20082A116 /* PAPProfileEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3CF1A3D2AC20082A116 /* PAPProfileEditView.xib */; };
+		2B84D3D21A3D3E6F0082A116 /* PAPProfileChildView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3D11A3D3E6F0082A116 /* PAPProfileChildView.xib */; };
+		2B84D3D51A3D3E840082A116 /* PAPProfileChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3D41A3D3E840082A116 /* PAPProfileChildView.m */; };
 		2BCC00881A3C51060053C208 /* PAPCategeoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */; };
 		2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */; };
+		2BD41B171A3D0E2E00968228 /* PAPUserProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41B161A3D0E2E00968228 /* PAPUserProfileView.m */; };
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
 		74636BF31578281E00B44132 /* PAPFindFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74636BF21578281E00B44132 /* PAPFindFriendsCell.m */; };
 		747FC485156FFF74003349E1 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 747FC484156FFF74003349E1 /* PAPConstants.m */; };
@@ -190,10 +197,21 @@
 		09ABC07313A1D52D009C3FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2B84D3BB1A3D1A810082A116 /* PAPUserProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PAPUserProfileView.xib; path = Anypic/PAPUserProfileView.xib; sourceTree = SOURCE_ROOT; };
+		2B84D3C31A3D29F40082A116 /* ProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileEditViewController.h; path = Anypic/ProfileEditViewController.h; sourceTree = SOURCE_ROOT; };
+		2B84D3C41A3D29F40082A116 /* ProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditViewController.m; path = Anypic/ProfileEditViewController.m; sourceTree = SOURCE_ROOT; };
+		2B84D3CC1A3D2AA60082A116 /* PAPProfileEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPProfileEditView.h; path = Anypic/PAPProfileEditView.h; sourceTree = SOURCE_ROOT; };
+		2B84D3CD1A3D2AA60082A116 /* PAPProfileEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPProfileEditView.m; path = Anypic/PAPProfileEditView.m; sourceTree = SOURCE_ROOT; };
+		2B84D3CF1A3D2AC20082A116 /* PAPProfileEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PAPProfileEditView.xib; path = Anypic/PAPProfileEditView.xib; sourceTree = SOURCE_ROOT; };
+		2B84D3D11A3D3E6F0082A116 /* PAPProfileChildView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAPProfileChildView.xib; sourceTree = SOURCE_ROOT; };
+		2B84D3D31A3D3E840082A116 /* PAPProfileChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPProfileChildView.h; path = Anypic/PAPProfileChildView.h; sourceTree = SOURCE_ROOT; };
+		2B84D3D41A3D3E840082A116 /* PAPProfileChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPProfileChildView.m; path = Anypic/PAPProfileChildView.m; sourceTree = SOURCE_ROOT; };
 		2BCC00861A3C51060053C208 /* PAPCategeoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategeoryViewController.h; path = Anypic/PAPCategeoryViewController.h; sourceTree = SOURCE_ROOT; };
 		2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPCategeoryViewController.m; path = Anypic/PAPCategeoryViewController.m; sourceTree = SOURCE_ROOT; };
 		2BCC00891A3C62280053C208 /* PAPCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategoryCell.h; path = Anypic/PAPCategoryCell.h; sourceTree = SOURCE_ROOT; };
 		2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPCategoryCell.m; path = Anypic/PAPCategoryCell.m; sourceTree = SOURCE_ROOT; };
+		2BD41B151A3D0E2E00968228 /* PAPUserProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPUserProfileView.h; path = Anypic/PAPUserProfileView.h; sourceTree = SOURCE_ROOT; };
+		2BD41B161A3D0E2E00968228 /* PAPUserProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPUserProfileView.m; path = Anypic/PAPUserProfileView.m; sourceTree = SOURCE_ROOT; };
 		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		74636BF11578281E00B44132 /* PAPFindFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = PAPFindFriendsCell.h; path = AnyPic/PAPFindFriendsCell.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		74636BF21578281E00B44132 /* PAPFindFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = PAPFindFriendsCell.m; path = AnyPic/PAPFindFriendsCell.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -490,6 +508,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2B84D3BD1A3D287A0082A116 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2B84D3C31A3D29F40082A116 /* ProfileEditViewController.h */,
+				2B84D3C41A3D29F40082A116 /* ProfileEditViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		2B84D3C61A3D2A0C0082A116 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2B84D3CC1A3D2AA60082A116 /* PAPProfileEditView.h */,
+				2B84D3CD1A3D2AA60082A116 /* PAPProfileEditView.m */,
+				2B84D3CF1A3D2AC20082A116 /* PAPProfileEditView.xib */,
+				2B84D3D31A3D3E840082A116 /* PAPProfileChildView.h */,
+				2B84D3D41A3D3E840082A116 /* PAPProfileChildView.m */,
+				2B84D3D11A3D3E6F0082A116 /* PAPProfileChildView.xib */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		2BD41B121A3D0D9700968228 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				2BD41B151A3D0E2E00968228 /* PAPUserProfileView.h */,
+				2BD41B161A3D0E2E00968228 /* PAPUserProfileView.m */,
+				2B84D3BB1A3D1A810082A116 /* PAPUserProfileView.xib */,
+			);
+			name = ProfileView;
+			sourceTree = "<group>";
+		};
 		7460D3AD1565557A00F755E4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +808,7 @@
 		C4A89496155879F600DC57D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B84D3BD1A3D287A0082A116 /* Account */,
 				74A504E51565F17E00CFA4E3 /* Login */,
 				C4A894921558795F00DC57D3 /* Home */,
 				C4A894941558796C00DC57D3 /* Take Photo */,
@@ -773,6 +824,8 @@
 		C4A89497155879FC00DC57D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B84D3C61A3D2A0C0082A116 /* Account */,
+				2BD41B121A3D0D9700968228 /* ProfileView */,
 				74A504E31565F0E400CFA4E3 /* TimelineViews */,
 				74B86B911562DB2600CAFFD2 /* PhotoDetailsViews */,
 				74A504E21565F0C200CFA4E3 /* UITableViewCells */,
@@ -875,6 +928,7 @@
 				C4F101F4156C2D800061BC3E /* ActivityFeedBlank.png in Resources */,
 				C4F101F5156C2D800061BC3E /* ActivityFeedBlank@2x.png in Resources */,
 				C4F101F6156C2D800061BC3E /* HomeTimelineBlank.png in Resources */,
+				2B84D3BC1A3D1A810082A116 /* PAPUserProfileView.xib in Resources */,
 				C4F101F7156C2D800061BC3E /* HomeTimelineBlank@2x.png in Resources */,
 				C4F101FC156C35EE0061BC3E /* CellLoadMore.png in Resources */,
 				C4F101FD156C35EE0061BC3E /* CellLoadMore@2x.png in Resources */,
@@ -887,6 +941,7 @@
 				C4BE66FF157FC52F00A291C2 /* ShadowProfilePicture-43.png in Resources */,
 				C4BE6700157FC52F00A291C2 /* ShadowProfilePicture-43@2x.png in Resources */,
 				C4BE670B157FC7D000A291C2 /* Default.png in Resources */,
+				2B84D3D01A3D2AC20082A116 /* PAPProfileEditView.xib in Resources */,
 				C4BE670C157FC7D000A291C2 /* Default@2x.png in Resources */,
 				C4BE670D157FC7D000A291C2 /* Icon-72.png in Resources */,
 				C4BE670E157FC7D000A291C2 /* Icon-72@2x.png in Resources */,
@@ -944,6 +999,7 @@
 				C4BE679A157FC7F700A291C2 /* ButtonLikeSelected@2x.png in Resources */,
 				C4BE679B157FC7F700A291C2 /* ButtonNavigationBar.png in Resources */,
 				C4BE679C157FC7F700A291C2 /* ButtonNavigationBar@2x.png in Resources */,
+				2B84D3D21A3D3E6F0082A116 /* PAPProfileChildView.xib in Resources */,
 				C4BE679D157FC7F700A291C2 /* ButtonNavigationBarSelected.png in Resources */,
 				C4BE679E157FC7F700A291C2 /* ButtonNavigationBarSelected@2x.png in Resources */,
 				C4BE679F157FC7F700A291C2 /* ButtonSettings.png in Resources */,
@@ -1000,7 +1056,9 @@
 			files = (
 				C4F10288156C56F20061BC3E /* UIImage+AlphaAdditions.m in Sources */,
 				C4F1028A156C56F20061BC3E /* UIImage+ResizeAdditions.m in Sources */,
+				2B84D3CE1A3D2AA60082A116 /* PAPProfileEditView.m in Sources */,
 				C4F1028B156C56F20061BC3E /* UIImage+RoundedCornerAdditions.m in Sources */,
+				2B84D3D51A3D3E840082A116 /* PAPProfileChildView.m in Sources */,
 				C4F10291156C571C0061BC3E /* AppDelegate.m in Sources */,
 				C4F10292156C571C0061BC3E /* PAPUtility.m in Sources */,
 				C4F102A0156C574A0061BC3E /* PAPImageView.m in Sources */,
@@ -1021,8 +1079,10 @@
 				C4F102CC156C57EE0061BC3E /* PAPHomeViewController.m in Sources */,
 				C4F102CD156C57EE0061BC3E /* PAPPhotoTimelineViewController.m in Sources */,
 				C4F102D2156C57FD0061BC3E /* PAPAccountViewController.m in Sources */,
+				2BD41B171A3D0E2E00968228 /* PAPUserProfileView.m in Sources */,
 				C4F102D3156C57FD0061BC3E /* PAPPhotoDetailsViewController.m in Sources */,
 				C4F102D8156C580C0061BC3E /* PAPFindFriendsViewController.m in Sources */,
+				2B84D3C51A3D29F40082A116 /* ProfileEditViewController.m in Sources */,
 				C4F102D9156C580C0061BC3E /* PAPSettingsActionSheetDelegate.m in Sources */,
 				C4F102DC156C58170061BC3E /* PAPEditPhotoViewController.m in Sources */,
 				2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */,
@@ -1104,6 +1164,7 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/CrittercismSDK\"",
@@ -1132,6 +1193,7 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/CrittercismSDK\"",
@@ -1177,6 +1239,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = TESTING;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/CrittercismSDK\"",
@@ -1223,6 +1286,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = TESTING;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/CrittercismSDK\"",

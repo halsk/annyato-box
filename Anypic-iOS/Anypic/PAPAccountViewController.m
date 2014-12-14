@@ -9,6 +9,7 @@
 #import "PAPPhotoCell.h"
 #import "TTTTimeIntervalFormatter.h"
 #import "PAPLoadMoreCell.h"
+#import "ProfileEditViewController.h"
 
 @interface PAPAccountViewController()
 @property (nonatomic, strong) UIView *headerView;
@@ -42,7 +43,7 @@
     [backButton setBackgroundImage:[UIImage imageNamed:@"ButtonBackSelected.png"] forState:UIControlStateHighlighted];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     
-    self.headerView = [[UIView alloc] initWithFrame:CGRectMake( 0.0f, 0.0f, self.tableView.bounds.size.width, 222.0f)];
+    self.headerView = [[UIView alloc] initWithFrame:CGRectMake( 0.0f, 0.0f, self.tableView.bounds.size.width, 272.0f)];
     [self.headerView setBackgroundColor:[UIColor clearColor]]; // should be clear, this will be the container for our avatar, photo count, follower count, following count, and so on
     
     UIView *texturedBackgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -132,6 +133,12 @@
     [self.headerView addSubview:userDisplayNameLabel];
     
     [photoCountLabel setText:@"0 photos"];
+    
+    PAPUserProfileView *profileView = [PAPUserProfileView view];
+    profileView.frame = CGRectMake( 0, 200.0f,  self.headerView.bounds.size.width, 50.0f);
+    profileView.delegate = self;
+    [self.headerView addSubview:profileView];
+
     
     PFQuery *queryPhotoCount = [PFQuery queryWithClassName:@"Photo"];
     [queryPhotoCount whereKey:kPAPPhotoUserKey equalTo:self.user];
@@ -279,6 +286,12 @@
 - (void)configureUnfollowButton {
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Unfollow" style:UIBarButtonItemStyleBordered target:self action:@selector(unfollowButtonAction:)];
     [[PAPCache sharedCache] setFollowStatus:YES user:self.user];
+}
+
+#pragma mark - PAPUserProfileViewDelegate
+- (void)pressEditButton:(id)sender{
+    ProfileEditViewController* controller = [[ProfileEditViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

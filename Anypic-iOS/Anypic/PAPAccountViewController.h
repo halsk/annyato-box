@@ -6,8 +6,9 @@
 //
 
 #import "PAPPhotoTimelineViewController.h"
+#import "PAPUserProfileView.h"
 
-@interface PAPAccountViewController : PAPPhotoTimelineViewController
+@interface PAPAccountViewController : PAPPhotoTimelineViewController<PAPUserProfileViewDelegate>
 
 @property (nonatomic, strong) PFUser *user;
 
