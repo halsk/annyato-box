@@ -8,6 +8,7 @@
 
 #import "PAPWishListUserViewController.h"
 #include "PAPWishlistUserCell.h"
+#include "PAPCategeoryViewController.h"
 
 @interface PAPWishListUserViewController ()
 
@@ -79,6 +80,18 @@
     
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    PFUser *user = [self.objects objectAtIndex:indexPath.row];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    PAPCategeoryViewController *controller = [[PAPCategeoryViewController alloc] initWithUser:user];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+
+
 - (PFQuery *)queryForTable{
     return [PFUser query];
 }

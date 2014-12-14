@@ -15,6 +15,7 @@
 @property (nonatomic, assign) BOOL shouldReloadOnAppear;
 @property (nonatomic, strong) NSMutableSet *reusableSectionHeaderViews;
 @property (nonatomic, strong) NSMutableDictionary *outstandingSectionHeaderQueries;
+@property (nonatomic, assign) PFUser *selecteduser;
 @end
 
 @implementation PAPCategeoryViewController
@@ -24,6 +25,11 @@
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:PAPCategoryViewControllerCategoryDidLoadNotification object:nil];
 
+}
+- (id)initWithUser:(PFUser *)user{
+    self = [self initWithStyle:UITableViewCellStyleDefault];
+    self.selecteduser = user;
+    return self;
 }
 - (id)initWithStyle:(UITableViewStyle)style
 {
