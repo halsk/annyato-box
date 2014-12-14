@@ -78,4 +78,5 @@
     PAPFindFriendsViewController *detailViewController = [[PAPFindFriendsViewController alloc] init];
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
+
 @end

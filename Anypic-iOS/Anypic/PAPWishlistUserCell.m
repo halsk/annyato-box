@@ -23,6 +23,8 @@
         self.imageView.backgroundColor = [UIColor whiteColor];
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         
+        
+        self.detailTextLabel.frame = CGRectMake( 95.0f, 80.0f, 210.0f, 50.0f);
         self.photoButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.photoButton.frame = CGRectMake( 20.0f, 5.0f, 50.0f, 50.0f);
         self.photoButton.backgroundColor = [UIColor clearColor];
@@ -41,6 +43,8 @@
     [super layoutSubviews];
     self.imageView.frame = CGRectMake( 20.0f, 5.0f, 50.0f, 50.0f);
     self.photoButton.frame = CGRectMake( 20.0f, 5.0f, 50.0f, 50.0f);
+    self.detailTextLabel.frame = CGRectMake( 95.0f, 80.0f, 210.0f, 50.0f);
+
 }
 
 @end

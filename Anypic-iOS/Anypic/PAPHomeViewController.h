@@ -6,9 +6,9 @@
 //
 
 #import "PAPPhotoTimelineViewController.h"
-#import "PAPCategeoryViewController.h"
+#import "PAPWishListUserViewController.h"
 
-@interface PAPHomeViewController : PAPCategeoryViewController
+@interface PAPHomeViewController : PAPWishListUserViewController;
 
 @property (nonatomic, assign, getter = isFirstLaunch) BOOL firstLaunch;
 

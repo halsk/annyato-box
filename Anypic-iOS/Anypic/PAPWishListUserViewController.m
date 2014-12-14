@@ -21,7 +21,8 @@
     if (self) {
         
         // The className to query on
-        self.className = kPAPPhotoClassKey;
+        //self.className = kPAPInstallationUserKey;
+        self.className  = @"User";
         
         // Whether the built-in pull-to-refresh is enabled
         self.pullToRefreshEnabled = YES;
@@ -35,7 +36,9 @@
     }
     return self;
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated] ;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -59,14 +62,15 @@
     PAPWishlistUserCell *cell = (PAPWishlistUserCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[PAPWishlistUserCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[PAPWishlistUserCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         [cell.photoButton addTarget:self action:@selector(didTapOnCategoryAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     cell.photoButton.tag = indexPath.row;
     cell.imageView.image = [UIImage imageNamed:@"PlaceholderPhoto.png"];
-    cell.imageView.file = [object objectForKey:kPAPPhotoThumbnailKey];
-    cell.textLabel.text = [object objectForKey:kPAPPhotoTitleKey];
+    cell.imageView.file = [object objectForKey:kPAPUserProfilePicSmallKey];
+    cell.textLabel.text = [object objectForKey:kPAPUserDisplayNameKey];
+    cell.detailTextLabel.text = [object objectForKey:kPAPUserProfileText];
     
     // PFQTVC will take care of asynchronously downloading files, but will only load them when the tableview is not moving. If the data is there, let's load it right away.
     if ([cell.imageView.file isDataAvailable]) {
@@ -75,5 +79,9 @@
     
     return cell;
 }
+- (PFQuery *)queryForTable{
+    return [PFUser query];
+}
+
 
 @end
