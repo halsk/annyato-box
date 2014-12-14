@@ -9,6 +9,7 @@
 
 #import "PAPCategeoryViewController.h"
 #import "PAPCategoryCell.h"
+#import "PAPPhotoTimelineViewController.h"
 
 @interface PAPCategeoryViewController ()
 @property (nonatomic, assign) BOOL shouldReloadOnAppear;
@@ -74,10 +75,10 @@
         [self loadObjects];
     }
 }
+#pragma mark -
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60;
 }
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     static NSString *CellIdentifier = @"CCell";
     
@@ -99,6 +100,16 @@
     }
         
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self didTapOnCategory:indexPath];
+}
+- (void)didTapOnCategoryAction:(UIButton *)sender {
+    [self didTapOnCategory:sender.tag];
+}
+- (void)didTapOnCategory:(int)categoryid{
+    PAPPhotoTimelineViewController *photoTimelineVC = [[PAPPhotoTimelineViewController alloc] initWithCategoryId:categoryid];
+    [self.navigationController pushViewController:photoTimelineVC animated:YES];
 }
 
 @end

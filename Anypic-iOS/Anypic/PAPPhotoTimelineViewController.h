@@ -10,5 +10,6 @@
 @interface PAPPhotoTimelineViewController : PFQueryTableViewController <PAPPhotoHeaderViewDelegate>
 
 - (PAPPhotoHeaderView *)dequeueReusableSectionHeaderView;
+- (id)initWithCategoryId:(int)id;
 
 @end

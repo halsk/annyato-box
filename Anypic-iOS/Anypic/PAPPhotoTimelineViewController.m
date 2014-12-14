@@ -34,6 +34,10 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:PAPPhotoDetailsViewControllerUserDeletedPhotoNotification object:nil];
 }
 
+- (id)initWithCategoryId:(int)id{
+    return [self initWithStyle:UITableViewStylePlain];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
