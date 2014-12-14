@@ -25,7 +25,6 @@
 {
     [super awakeFromNib];
     
-    self.label.text = NSStringFromClass([self class]);
 }
 
 -(IBAction)editButtonTapped:(id)sender{

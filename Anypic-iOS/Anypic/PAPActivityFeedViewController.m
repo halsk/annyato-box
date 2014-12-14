@@ -277,7 +277,7 @@ static NSString *const kPAPActivityTypeJoinedString = @"joined Anypic";
 
 - (void)settingsButtonAction:(id)sender {
     settingsActionSheetDelegate = [[PAPSettingsActionSheetDelegate alloc] initWithNavigationController:self.navigationController];
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:settingsActionSheetDelegate cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"My Profile", @"Find Friends", @"Log Out", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:settingsActionSheetDelegate cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"プロフィール", @"友だちをさがす", @"Log Out", nil];
     
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }

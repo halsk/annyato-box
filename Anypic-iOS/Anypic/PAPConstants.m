@@ -76,6 +76,8 @@ NSString *const kPAPPhotoClassKey = @"Photo";
 NSString *const kPAPPhotoPictureKey         = @"image";
 NSString *const kPAPPhotoThumbnailKey       = @"thumbnail";
 NSString *const kPAPPhotoUserKey            = @"user";
+NSString *const kPAPPhotoTitleKey           = @"title";
+
 
 #pragma mark - Category Class
 // Class key

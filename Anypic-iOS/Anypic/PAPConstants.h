@@ -81,6 +81,7 @@ extern NSString *const kPAPPhotoClassKey;
 extern NSString *const kPAPPhotoPictureKey;
 extern NSString *const kPAPPhotoThumbnailKey;
 extern NSString *const kPAPPhotoUserKey;
+extern NSString *const kPAPPhotoTitleKey;
 
 #pragma mark - PFObject Category Class
 // Class key

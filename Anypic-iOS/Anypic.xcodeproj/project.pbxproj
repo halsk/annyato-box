@@ -22,6 +22,8 @@
 		2B84D3D01A3D2AC20082A116 /* PAPProfileEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3CF1A3D2AC20082A116 /* PAPProfileEditView.xib */; };
 		2B84D3D21A3D3E6F0082A116 /* PAPProfileChildView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3D11A3D3E6F0082A116 /* PAPProfileChildView.xib */; };
 		2B84D3D51A3D3E840082A116 /* PAPProfileChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3D41A3D3E840082A116 /* PAPProfileChildView.m */; };
+		2B84D3D81A3D47520082A116 /* PAPWishListUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3D71A3D47520082A116 /* PAPWishListUserViewController.m */; };
+		2B84D3DB1A3D4A3F0082A116 /* PAPWishlistUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3DA1A3D4A3F0082A116 /* PAPWishlistUserCell.m */; };
 		2BCC00881A3C51060053C208 /* PAPCategeoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */; };
 		2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */; };
 		2BD41B171A3D0E2E00968228 /* PAPUserProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41B161A3D0E2E00968228 /* PAPUserProfileView.m */; };
@@ -206,6 +208,10 @@
 		2B84D3D11A3D3E6F0082A116 /* PAPProfileChildView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAPProfileChildView.xib; sourceTree = SOURCE_ROOT; };
 		2B84D3D31A3D3E840082A116 /* PAPProfileChildView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPProfileChildView.h; path = Anypic/PAPProfileChildView.h; sourceTree = SOURCE_ROOT; };
 		2B84D3D41A3D3E840082A116 /* PAPProfileChildView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPProfileChildView.m; path = Anypic/PAPProfileChildView.m; sourceTree = SOURCE_ROOT; };
+		2B84D3D61A3D47520082A116 /* PAPWishListUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPWishListUserViewController.h; path = Anypic/PAPWishListUserViewController.h; sourceTree = SOURCE_ROOT; };
+		2B84D3D71A3D47520082A116 /* PAPWishListUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPWishListUserViewController.m; path = Anypic/PAPWishListUserViewController.m; sourceTree = SOURCE_ROOT; };
+		2B84D3D91A3D4A3F0082A116 /* PAPWishlistUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPWishlistUserCell.h; path = Anypic/PAPWishlistUserCell.h; sourceTree = SOURCE_ROOT; };
+		2B84D3DA1A3D4A3F0082A116 /* PAPWishlistUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPWishlistUserCell.m; path = Anypic/PAPWishlistUserCell.m; sourceTree = SOURCE_ROOT; };
 		2BCC00861A3C51060053C208 /* PAPCategeoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategeoryViewController.h; path = Anypic/PAPCategeoryViewController.h; sourceTree = SOURCE_ROOT; };
 		2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPCategeoryViewController.m; path = Anypic/PAPCategeoryViewController.m; sourceTree = SOURCE_ROOT; };
 		2BCC00891A3C62280053C208 /* PAPCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategoryCell.h; path = Anypic/PAPCategoryCell.h; sourceTree = SOURCE_ROOT; };
@@ -714,6 +720,8 @@
 				C4F102AC156C57810061BC3E /* PAPActivityCell.m */,
 				74636BF11578281E00B44132 /* PAPFindFriendsCell.h */,
 				74636BF21578281E00B44132 /* PAPFindFriendsCell.m */,
+				2B84D3D91A3D4A3F0082A116 /* PAPWishlistUserCell.h */,
+				2B84D3DA1A3D4A3F0082A116 /* PAPWishlistUserCell.m */,
 			);
 			name = PAPBaseTextCell;
 			sourceTree = "<group>";
@@ -781,6 +789,8 @@
 				C4F102CF156C57FD0061BC3E /* PAPAccountViewController.m */,
 				2BCC00861A3C51060053C208 /* PAPCategeoryViewController.h */,
 				2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */,
+				2B84D3D61A3D47520082A116 /* PAPWishListUserViewController.h */,
+				2B84D3D71A3D47520082A116 /* PAPWishListUserViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -1060,6 +1070,7 @@
 				C4F1028B156C56F20061BC3E /* UIImage+RoundedCornerAdditions.m in Sources */,
 				2B84D3D51A3D3E840082A116 /* PAPProfileChildView.m in Sources */,
 				C4F10291156C571C0061BC3E /* AppDelegate.m in Sources */,
+				2B84D3DB1A3D4A3F0082A116 /* PAPWishlistUserCell.m in Sources */,
 				C4F10292156C571C0061BC3E /* PAPUtility.m in Sources */,
 				C4F102A0156C574A0061BC3E /* PAPImageView.m in Sources */,
 				C4F102A1156C574A0061BC3E /* PAPProfileImageView.m in Sources */,
@@ -1086,6 +1097,7 @@
 				C4F102D9156C580C0061BC3E /* PAPSettingsActionSheetDelegate.m in Sources */,
 				C4F102DC156C58170061BC3E /* PAPEditPhotoViewController.m in Sources */,
 				2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */,
+				2B84D3D81A3D47520082A116 /* PAPWishListUserViewController.m in Sources */,
 				C4F102EF156C58E00061BC3E /* main.m in Sources */,
 				C4A0B505156C5B9F00E48554 /* TTTTimeIntervalFormatter.m in Sources */,
 				747FC485156FFF74003349E1 /* PAPConstants.m in Sources */,

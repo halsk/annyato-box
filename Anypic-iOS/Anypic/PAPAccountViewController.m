@@ -43,7 +43,7 @@
     [backButton setBackgroundImage:[UIImage imageNamed:@"ButtonBackSelected.png"] forState:UIControlStateHighlighted];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     
-    self.headerView = [[UIView alloc] initWithFrame:CGRectMake( 0.0f, 0.0f, self.tableView.bounds.size.width, 272.0f)];
+    self.headerView = [[UIView alloc] initWithFrame:CGRectMake( 0.0f, 0.0f, self.tableView.bounds.size.width, 282.0f)];
     [self.headerView setBackgroundColor:[UIColor clearColor]]; // should be clear, this will be the container for our avatar, photo count, follower count, following count, and so on
     
     UIView *texturedBackgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -132,10 +132,10 @@
     [userDisplayNameLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
     [self.headerView addSubview:userDisplayNameLabel];
     
-    [photoCountLabel setText:@"0 photos"];
+    [photoCountLabel setText:@"0 items"];
     
     PAPUserProfileView *profileView = [PAPUserProfileView view];
-    profileView.frame = CGRectMake( 0, 200.0f,  self.headerView.bounds.size.width, 50.0f);
+    profileView.frame = CGRectMake( 0, 200.0f,  self.headerView.bounds.size.width, 80.0f);
     profileView.delegate = self;
     [self.headerView addSubview:profileView];
 

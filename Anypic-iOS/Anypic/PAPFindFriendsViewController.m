@@ -193,7 +193,7 @@ static NSUInteger const kPAPCellPhotoNumLabelTag = 5;
     
     [cell setUser:(PFUser*)object];
 
-    [cell.photoLabel setText:@"0 photos"];
+    [cell.photoLabel setText:@"0 items"];
     
     NSDictionary *attributes = [[PAPCache sharedCache] attributesForUser:(PFUser *)object];
     
@@ -202,9 +202,9 @@ static NSUInteger const kPAPCellPhotoNumLabelTag = 5;
         NSString *pluralizedPhoto;
         NSNumber *number = [[PAPCache sharedCache] photoCountForUser:(PFUser *)object];
         if ([number intValue] == 1) {
-            pluralizedPhoto = @"photo";
+            pluralizedPhoto = @"item";
         } else {
-            pluralizedPhoto = @"photos";
+            pluralizedPhoto = @"items";
         }
         [cell.photoLabel setText:[NSString stringWithFormat:@"%@ %@", number, pluralizedPhoto]];
     } else {
