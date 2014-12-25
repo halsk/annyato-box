@@ -61,6 +61,8 @@
         self.reusableSectionHeaderViews = [NSMutableSet setWithCapacity:3];
         
         self.shouldReloadOnAppear = NO;
+        self.title = @"バウンサー";
+
     }
     return self;
 }
@@ -69,6 +71,13 @@
 #pragma mark - UIViewController
 
 - (void)viewDidLoad {
+
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"あげる！" style:UIBarButtonItemStylePlain
+                                                                     target:self.navigationController.parentViewController  action:@selector(photoCaptureButtonAction:)];
+
+
+    self.navigationItem.rightBarButtonItem = anotherButton;
+
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone]; // PFQueryTableViewController reads this in viewDidLoad -- would prefer to throw this in init, but didn't work
     
     [super viewDidLoad];
@@ -410,6 +419,8 @@
 
 - (void)photoHeaderView:(PAPPhotoHeaderView *)photoHeaderView didTapCommentOnPhotoButton:(UIButton *)button  photo:(PFObject *)photo {
     PAPPhotoDetailsViewController *photoDetailsVC = [[PAPPhotoDetailsViewController alloc] initWithPhoto:photo];
+    photoDetailsVC.title = @"バウンサー";
+    //self.navigationController.title = @"バウンサー";
     [self.navigationController pushViewController:photoDetailsVC animated:YES];
 }
 

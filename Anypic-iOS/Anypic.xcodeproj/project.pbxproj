@@ -24,6 +24,7 @@
 		2B84D3D51A3D3E840082A116 /* PAPProfileChildView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3D41A3D3E840082A116 /* PAPProfileChildView.m */; };
 		2B84D3D81A3D47520082A116 /* PAPWishListUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3D71A3D47520082A116 /* PAPWishListUserViewController.m */; };
 		2B84D3DB1A3D4A3F0082A116 /* PAPWishlistUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3DA1A3D4A3F0082A116 /* PAPWishlistUserCell.m */; };
+		2B84D3DD1A3D6C2A0082A116 /* PAPPhotoDetailDeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3DC1A3D6C2A0082A116 /* PAPPhotoDetailDeaderView.xib */; };
 		2BCC00881A3C51060053C208 /* PAPCategeoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */; };
 		2BCC008B1A3C62280053C208 /* PAPCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC008A1A3C62280053C208 /* PAPCategoryCell.m */; };
 		2BD41B171A3D0E2E00968228 /* PAPUserProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41B161A3D0E2E00968228 /* PAPUserProfileView.m */; };
@@ -212,6 +213,7 @@
 		2B84D3D71A3D47520082A116 /* PAPWishListUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPWishListUserViewController.m; path = Anypic/PAPWishListUserViewController.m; sourceTree = SOURCE_ROOT; };
 		2B84D3D91A3D4A3F0082A116 /* PAPWishlistUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPWishlistUserCell.h; path = Anypic/PAPWishlistUserCell.h; sourceTree = SOURCE_ROOT; };
 		2B84D3DA1A3D4A3F0082A116 /* PAPWishlistUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPWishlistUserCell.m; path = Anypic/PAPWishlistUserCell.m; sourceTree = SOURCE_ROOT; };
+		2B84D3DC1A3D6C2A0082A116 /* PAPPhotoDetailDeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PAPPhotoDetailDeaderView.xib; path = Anypic/PAPPhotoDetailDeaderView.xib; sourceTree = SOURCE_ROOT; };
 		2BCC00861A3C51060053C208 /* PAPCategeoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategeoryViewController.h; path = Anypic/PAPCategeoryViewController.h; sourceTree = SOURCE_ROOT; };
 		2BCC00871A3C51060053C208 /* PAPCategeoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPCategeoryViewController.m; path = Anypic/PAPCategeoryViewController.m; sourceTree = SOURCE_ROOT; };
 		2BCC00891A3C62280053C208 /* PAPCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPCategoryCell.h; path = Anypic/PAPCategoryCell.h; sourceTree = SOURCE_ROOT; };
@@ -707,6 +709,7 @@
 				C4F102A8156C57620061BC3E /* PAPPhotoDetailsHeaderView.m */,
 				C4F102A5156C57620061BC3E /* PAPPhotoDetailsFooterView.h */,
 				C4F102A6156C57620061BC3E /* PAPPhotoDetailsFooterView.m */,
+				2B84D3DC1A3D6C2A0082A116 /* PAPPhotoDetailDeaderView.xib */,
 			);
 			name = PhotoDetailsViews;
 			sourceTree = "<group>";
@@ -996,6 +999,7 @@
 				C4BE678D157FC7F700A291C2 /* ButtonFollowing.png in Resources */,
 				C4BE678E157FC7F700A291C2 /* ButtonFollowing@2x.png in Resources */,
 				C4BE678F157FC7F700A291C2 /* ButtonFollowingSelected.png in Resources */,
+				2B84D3DD1A3D6C2A0082A116 /* PAPPhotoDetailDeaderView.xib in Resources */,
 				C4BE6790157FC7F700A291C2 /* ButtonFollowingSelected@2x.png in Resources */,
 				C4BE6791157FC7F700A291C2 /* ButtonFollowSelected.png in Resources */,
 				C4BE6792157FC7F700A291C2 /* ButtonFollowSelected@2x.png in Resources */,

@@ -174,7 +174,7 @@
     
     NSTimeInterval timeInterval = [[self.photo createdAt] timeIntervalSinceNow];
     NSString *timestamp = [self.timeIntervalFormatter stringForTimeInterval:timeInterval];
-    [self.timestampLabel setText:timestamp];
+    [self.timestampLabel setText:[aPhoto objectForKey:kPAPPhotoTitleKey]];
 
     [self setNeedsDisplay];
 }

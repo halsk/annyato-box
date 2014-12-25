@@ -54,6 +54,7 @@
         self.reusableSectionHeaderViews = [NSMutableSet setWithCapacity:3];
         
         self.shouldReloadOnAppear = NO;
+        self.title = @"ハルさんの欲しいもの";
     }
     return self;
 }
