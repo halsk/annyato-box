@@ -16,6 +16,7 @@
 		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
 		09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
+		2B8438701A4BBA6200B1CD0D /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B84386F1A4BBA6200B1CD0D /* Keys.plist */; };
 		2B84D3BC1A3D1A810082A116 /* PAPUserProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B84D3BB1A3D1A810082A116 /* PAPUserProfileView.xib */; };
 		2B84D3C51A3D29F40082A116 /* ProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3C41A3D29F40082A116 /* ProfileEditViewController.m */; };
 		2B84D3CE1A3D2AA60082A116 /* PAPProfileEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B84D3CD1A3D2AA60082A116 /* PAPProfileEditView.m */; };
@@ -200,6 +201,7 @@
 		09ABC07313A1D52D009C3FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2B84386F1A4BBA6200B1CD0D /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = SOURCE_ROOT; };
 		2B84D3BB1A3D1A810082A116 /* PAPUserProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PAPUserProfileView.xib; path = Anypic/PAPUserProfileView.xib; sourceTree = SOURCE_ROOT; };
 		2B84D3C31A3D29F40082A116 /* ProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileEditViewController.h; path = Anypic/ProfileEditViewController.h; sourceTree = SOURCE_ROOT; };
 		2B84D3C41A3D29F40082A116 /* ProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditViewController.m; path = Anypic/ProfileEditViewController.m; sourceTree = SOURCE_ROOT; };
@@ -512,6 +514,7 @@
 				C4F102ED156C58E00061BC3E /* Prefix.pch */,
 				C4F102E5156C58570061BC3E /* InfoPlist.strings */,
 				C4F102DF156C58440061BC3E /* Entitlements.plist */,
+				2B84386F1A4BBA6200B1CD0D /* Keys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1032,6 +1035,7 @@
 				C4BE67AC157FC7F700A291C2 /* IconHomeSelected@2x.png in Resources */,
 				C4BE67AD157FC7F700A291C2 /* IconPics.png in Resources */,
 				C4BE67AE157FC7F700A291C2 /* IconPics@2x.png in Resources */,
+				2B8438701A4BBA6200B1CD0D /* Keys.plist in Resources */,
 				C4BE67AF157FC7F700A291C2 /* IconTick.png in Resources */,
 				C4BE67B0157FC7F700A291C2 /* IconTick@2x.png in Resources */,
 				C4BE67B1157FC7F700A291C2 /* IconTickSelected.png in Resources */,
